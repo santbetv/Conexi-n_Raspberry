@@ -1,0 +1,23 @@
+apagar otro servicio:
+
+service nginx stop
+
+Colocarlo siempre al inicio:
+
+export FLASK_APP=jwtprueba (recoradar colocarlo en /etc/bash.bashrc)
+
+activar servicio como:
+
+pi@raspberry:~/pi.projects/jwt-auth-project $ sudo -E flask run --host=0.0.0.0 --port=80
+
+
+ventana=Tk()
+                ventana.config(bg="white")
+                ventana.geometry("460x360")
+                ventana.resizable(width=TRUE, height=TRUE)
+                ventana.title("Venta enceder puerta - python")
+                etiquetaNombre= Label(ventana, text="Introducir la cedula del ganadero").grid(row=0,column=1)
+                texto=StringVar()
+                nombre= Entry(ventana, width=30).grid(row=2,column=1)
+                botonMensaje = Button(ventana, text="mensaje", command=lambda: print("hola")).grid(row=1,column=4)
+                ventana.mainloop()
